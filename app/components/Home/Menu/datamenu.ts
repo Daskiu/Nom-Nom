@@ -7,10 +7,10 @@ interface DataShape {
 
 const dataMenu: DataShape[] = [
     {
-    home: "./Images/profile.png",
+    home: "/Images/profile.png",
     search: "/Images/Search.png",
-    add: "./Images/Save.png",
-    profile: "./Images/profile.png",
+    add: "/Images/Save.png",
+    profile: "/Images/profile.png",
     },
 ];
 
