@@ -1,22 +1,15 @@
-export enum Attribut {
-    "profileimg" = "profileimg",
-    "name" = "name",
-    "img" = "img",
-    "like" = "like",
-    "numb" = "numb",
-    "comment" = "comment",
-}
-
-class Post extends HTMLElement{
-    profileimg?: string;
-    name?: string;
-    img?: string;
-    like?: string;
-    numb?: string;
-    comment?: string;
-
-    static get observedAttributes(){
-        const attrs: Record<Attribut, null> ={
+export var Attribut;
+(function (Attribut) {
+    Attribut["profileimg"] = "profileimg";
+    Attribut["name"] = "name";
+    Attribut["img"] = "img";
+    Attribut["like"] = "like";
+    Attribut["numb"] = "numb";
+    Attribut["comment"] = "comment";
+})(Attribut || (Attribut = {}));
+class Post extends HTMLElement {
+    static get observedAttributes() {
+        const attrs = {
             profileimg: null,
             name: null,
             img: null,
@@ -24,36 +17,26 @@ class Post extends HTMLElement{
             numb: null,
             comment: null,
         };
-
         return Object.keys(attrs);
     }
-
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
     }
-
     connectedCallback() {
         this.render();
     }
-
-    attributeChangedCallback(
-        propimg: Attribut,
-        _: string | undefined,
-        newValue: string | undefined
-        ) {
-            switch (propimg) {
-                default:
+    attributeChangedCallback(propimg, _, newValue) {
+        switch (propimg) {
+            default:
                 this[propimg] = newValue;
                 break;
-            }
-
-            this.render();
         }
-
-        render(){
-            if (this.shadowRoot){
-                this.shadowRoot.innerHTML = `
+        this.render();
+    }
+    render() {
+        if (this.shadowRoot) {
+            this.shadowRoot.innerHTML = `
                 <link rel="stylesheet" href="./app/components/Home/Post/post.css">
                 <div class="postCard">
                     <img class="profileImage" src="${this.profileimg}">
@@ -65,10 +48,9 @@ class Post extends HTMLElement{
                         <img class="comment" src="${this.comment}">
                     </div>
                 </div>
-                `
-            }
+                `;
         }
+    }
 }
-
 customElements.define("my-post", Post);
 export default Post;

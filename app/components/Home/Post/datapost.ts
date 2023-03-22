@@ -3,7 +3,7 @@ interface DataShape {
     name: string;
     img: string;
     like: string;
-    numb: number;
+    numb: string;
     comment: string;
 }
 
@@ -13,7 +13,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
     {
@@ -21,7 +21,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
     {
@@ -29,7 +29,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
     {
@@ -37,7 +37,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
     {
@@ -45,7 +45,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
     {
@@ -53,7 +53,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
     {
@@ -61,7 +61,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
     {
@@ -69,7 +69,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
     {
@@ -77,7 +77,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
     {
@@ -85,7 +85,7 @@ const dataPost: DataShape[] = [
     name: "Patylyn",
     img: "./Images/R1.jpg",
     like: "./Images/like.png",
-    numb: 123,
+    numb: "123",
     comment: "./Images/Comment.png",
     },
 ];
