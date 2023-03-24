@@ -55,14 +55,16 @@ class Post extends HTMLElement{
             if (this.shadowRoot){
                 this.shadowRoot.innerHTML = `
                 <link rel="stylesheet" href="./app/components/Home/Post/post.css">
-                <div class="postCard">
-                    <img class="profileImage" src="${this.profileimg}">
-                    <p class="name">${this.name}</p>
-                    <img class="img" src="${this.img}">
-                    <div class="actions">
-                        <img class="like" src="${this.like}">
-                        <p class="numb">${this.numb}</p>
-                        <img class="comment" src="${this.comment}">
+                <div id="postCard">
+                    <div id="perf">
+                        <img id="profileImage" src="${this.profileimg}">
+                        <p id="name">${this.name}</p>
+                    </div>
+                        <img id="img" src="${this.img}">
+                    <div id="actions">
+                        <img id="like" src="${this.like}">
+                        <p id="numb">${this.numb}</p>
+                        <img id="comment" src="${this.comment}">
                     </div>
                 </div>
                 `

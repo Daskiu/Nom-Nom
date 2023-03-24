@@ -34,11 +34,15 @@ class Menu extends HTMLElement {
         if (this.shadowRoot) {
             this.shadowRoot.innerHTML = `
                 <link rel="stylesheet" href="./app/components/Home/Menu/menu.css">
-                <div class="menu">
-                    <img class="home" src="${this.home}">
-                    <img class="search" src="${this.search}">
-                    <img class="add" src="${this.add}">
-                    <img class="profile" src="${this.profile}">
+                <div id="menu">
+                <div id="menu2">
+                    <img id="home" src="${this.home}">
+                    <img id="search" src="${this.search}">
+                    </div>
+                    <div id="menu3">
+                    <img id="add" src="${this.add}">
+                    <img id="profile" src="${this.profile}">
+                    </div>
                 </div>
                 `;
         }
