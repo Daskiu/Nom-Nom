@@ -1,0 +1,6 @@
+export {AttributeProfadd} from "../components/addcard/addcard"
+export {AttributeInput} from "../components/Input/input"
+export {AttributeMenu} from "../components/Menu/menu"
+export {AttributePost} from "../components/Post/post"
+export {AttributeProf} from "../components/Profilecard/profilecard"
+export {AttributeSearch} from "../components/searchcard/searchcard"
